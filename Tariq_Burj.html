@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARIQ BURJ - Discover Your Gemstone</title>
+    <link rel="stylesheet" href="burj.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>TARIQ BURJ</h1>
+        <p class="tagline">Discover Your Astrological Gemstone</p>
+    </header>
+    <div class="home">
+        <a href="index.html">GemHome</a>
+    </div>
+     <div class="home_r">
+        <a href="index.html">Rings</a>
+    </div>
+    
+    <div class="container">
+         <section class="hero">
+    
+        </section>
+
+        <section class="hero">
+            <h2>Find Your Perfect Gemstone</h2>
+            <p>According to ancient astrological traditions, your birth date and name reveal your personal Burj (constellation), lucky stone, color, and number. These elements can influence your life path, personality, and destiny. Discover yours today!</p>
+        </section>
+        
+        <section class="form-container">
+            <form id="gemstoneForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+                
+                <button type="submit">Find My Gemstone</button>
+            </form>
+        </section>
+        <section>
+            
+        </section>
+        
+        <section class="result-container" id="resultContainer">
+            <div class="result-header">
+                <h2>Your Astrological Profile</h2>
+                <p>Based on your birth details, here's your personal reading</p>
+            </div>
+            
+            <div class="result-grid">
+                <div class="result-card">
+                    <h3>Your Burj</h3>
+                    <p id="burjResult">-</p>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Lucky Stone</h3>
+                    <p id="stoneResult">-</p>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Lucky Color</h3>
+                    <p id="colorResult">-</p>
+                </div>
+                
+                <div class="result-card">
+                    <h3>Lucky Number</h3>
+                    <p id="numberResult">-</p>
+                </div>
+            </div>
+
+            
+            <div class="gemstone-info" id="gemstoneInfo">
+                <h3>About Your Gemstone</h3>
+                <p id="stoneDescription">Submit your details to learn about your personal gemstone.</p>
+            </div>
+            
+            <div class="gem_link">
+                <a href="GemDetail.html">Your Gem Deatail</a>
+            </div>
+        </section>
+        
+        <section class="gemstones-section">
+            <div class="section-title">
+                <h2>Famous Gemstones & Their Powers</h2>
+            </div>
+            
+            <div class="gemstones-grid">
+                <div class="gemstone-card">
+                    <div class="gemstone-image" style="background-image: url('Ruby\ \(1\).png');">
+                        <h3 class="gemstone-name">Ruby</h3>
+                    </div>
+                    <div class="gemstone-content">
+                        <div class="gemstone-properties">
+                            <div class="property">
+                                <span class="property-label">Burj</span>
+                                <span class="property-value">Aries</span>
+                            </div>
+                            <div class="property">
+                                <span class="property-label">Color</span>
+                                <span class="property-value">Red</span>
+                            </div>
+                            <div class="property">
+                                <span class="property-label">Number</span>
+                                <span class="property-value">9</span>
+                            </div>
+                        </div>
+                        <p>Ruby is known as the "King of Gems" and represents the Sun. It enhances leadership qualities, confidence, and vitality. Wearing ruby can bring success in career and protect against negative energies.</p>
+                    </div>
+                </div>
+                
+                <div class="gemstone-card">
+                    <div class="gemstone-image" style="background-image: url('Opal.jpg');">
+                        <h3 class="gemstone-name">Pearl</h3>
+                    </div>
+                    <div class="gemstone-content">
+                        <div class="gemstone-properties">
+                            <div class="property">
+                                <span class="property-label">Burj</span>
+                                <span class="property-value">Cancer</span>
+                            </div>
+                            <div class="property">
+                                <span class="property-label">Color</span>
+                                <span class="property-value">White</span>
+                            </div>
+                            <div class="property">
+                                <span class="property-label">Number</span>
+                                <span class="property-value">2</span>
+                            </div>
+                        </div>
+                        <p>Pearl represents the Moon and is associated with emotional balance, intuition, and maternal energy. It helps calm the mind, reduce stress, and enhance creativity and fertility.</p>
+                    </div>
+                </div>
+                
+                <div class="gemstone-card">
+                    <div class="gemstone-image" style="background-image: url('Emarald\ 1.png');">
+                        <h3 class="gemstone-name">Emerald</h3>
+                    </div>
+                    <div class="gemstone-content">
+                        <div class="gemstone-properties">
+                            <div class="property">
+                                <span class="property-label">Burj</span>
+                                <span class="property-value">Gemini</span>
+                            </div>
+                            <div class="property">
+                                <span class="property-label">Color</span>
+                                <span class="property-value">Green</span>
+                            </div>
+                            <div class="property">
+                                <span class="property-label">Number</span>
+                                <span class="property-value">5</span>
+                            </div>
+                        </div>
+                        <p>Emerald is associated with Mercury and enhances communication, intelligence, and business acumen. It promotes healing, fertility, and is said to reveal truth and protect against deceit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2023 TARIQ BURJ - Astrological Gemstone Finder</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <p>Discover the power of gemstones in your life</p>
+    </footer>
+    
+    <script>
+        document.getElementById('gemstoneForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const dob = new Date(document.getElementById('dob').value);
+            const month = dob.getMonth() + 1; // JavaScript months are 0-indexed
+            const day = dob.getDate();
+            
+            // Determine Burj based on date (simplified version)
+            let burj, stone, color, number, description;
+            
+            if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
+                burj = "Aries (Hamal)";
+                stone = "Ruby";
+                color = "Red";
+                number = "9";
+                description = "Ruby, the stone of the Sun, brings vitality, leadership, and courage. It enhances your natural energy and protects against negative influences. Wear it on your ring finger for best results.";
+            } 
+            else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
+                burj = "Taurus (Sawr)";
+                stone = "Diamond";
+                color = "White";
+                number = "6";
+                description = "Diamond represents Venus and brings love, beauty, and material comforts. It enhances creativity and artistic abilities while promoting harmony in relationships.";
+            }
+            else if ((month === 5 && day >= 21) || (month === 6 && day <= 20)) {
+                burj = "Gemini (Jawza)";
+                stone = "Emerald";
+                color = "Green";
+                number = "5";
+                description = "Emerald is Mercury's stone that boosts communication, intelligence, and business success. It helps in learning new skills and is excellent for students and professionals.";
+            }
+            else if ((month === 6 && day >= 21) || (month === 7 && day <= 22)) {
+                burj = "Cancer (Sartan)";
+                stone = "Pearl";
+                color = "White";
+                number = "2";
+                description = "Pearl represents the Moon and brings emotional balance, intuition, and maternal energy. It helps calm the mind and is beneficial for those in creative fields.";
+            }
+            else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
+                burj = "Leo (Asad)";
+                stone = "Ruby";
+                color = "Red";
+                number = "1";
+                description = "Ruby, the king of gems, enhances leadership qualities, confidence, and vitality. It's particularly powerful for Leos, bringing success and recognition.";
+            }
+            else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
+                burj = "Virgo (Sunbula)";
+                stone = "Emerald";
+                color = "Green";
+                number = "5";
+                description = "Emerald helps Virgos with their analytical skills and attention to detail. It promotes healing and is excellent for those in healthcare or service professions.";
+            }
+            else if ((month === 9 && day >= 23) || (month === 10 && day <= 22)) {
+                burj = "Libra (Meezan)";
+                stone = "Diamond";
+                color = "White";
+                number = "6";
+                description = "Diamond enhances Libra's natural sense of balance and justice. It promotes harmony in relationships and helps in making fair decisions.";
+            }
+            else if ((month === 10 && day >= 23) || (month === 11 && day <= 21)) {
+                burj = "Scorpio (Aqrab)";
+                stone = "Red Coral";
+                color = "Red";
+                number = "9";
+                description = "Red Coral represents Mars and gives courage, energy, and protection. It's particularly good for overcoming obstacles and enhancing physical vitality.";
+            }
+            else if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) {
+                burj = "Sagittarius (Qaws)";
+                stone = "Yellow Sapphire";
+                color = "Yellow";
+                number = "3";
+                description = "Yellow Sapphire represents Jupiter and brings wisdom, prosperity, and good fortune. It's excellent for spiritual growth and higher learning.";
+            }
+            else if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
+                burj = "Capricorn (Jady)";
+                stone = "Blue Sapphire";
+                color = "Blue";
+                number = "8";
+                description = "Blue Sapphire represents Saturn and brings discipline, focus, and career success. It helps in overcoming delays and obstacles in life.";
+            }
+            else if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+                burj = "Aquarius (Dalw)";
+                stone = "Blue Sapphire";
+                color = "Blue";
+                number = "8";
+                description = "Blue Sapphire enhances Aquarius's innovative thinking and humanitarian nature. It helps in turning ideas into reality and brings stability.";
+            }
+            else if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) {
+                burj = "Pisces (Hoot)";
+                stone = "Yellow Sapphire";
+                color = "Yellow";
+                number = "3";
+                description = "Yellow Sapphire enhances Pisces's intuition and spiritual connection. It brings optimism and helps in creative and healing professions.";
+            }
+            else {
+                burj = "Unknown";
+                stone = "Unknown";
+                color = "Unknown";
+                number = "Unknown";
+                description = "Please enter a valid date of birth to determine your astrological profile.";
+            }
+            
+            // Display results
+            document.getElementById('burjResult').textContent = burj;
+            document.getElementById('stoneResult').textContent = stone;
+            document.getElementById('colorResult').textContent = color;
+            document.getElementById('numberResult').textContent = number;
+            document.getElementById('stoneDescription').textContent = description;
+            
+            // Show result container with animation
+            const resultContainer = document.getElementById('resultContainer');
+            resultContainer.style.display = 'block';
+            
+            // Scroll to results
+            resultContainer.scrollIntoView({ behavior: 'smooth' });
+            
+            // Personalize with name if provided
+            if (name) {
+                document.querySelector('.result-header h2').textContent = `${name}'s Astrological Profile`;
+            }
+        });
+        
+        // Add some interactive effects
+        const gemstoneCards = document.querySelectorAll('.gemstone-card');
+        gemstoneCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                const image = this.querySelector('.gemstone-image');
+                image.style.transform = 'scale(1.05)';
+                image.style.transition = 'transform 0.5s ease';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                const image = this.querySelector('.gemstone-image');
+                image.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

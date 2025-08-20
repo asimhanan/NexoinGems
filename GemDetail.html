@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gem Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(270deg, #f9bebe, #a13e3e);
+      color: #960707;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #fcf7f7cc, #b40303c5);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #9f2424;
+      font-size: 2rem;
+    }
+    header img {
+      border: 1px solid #690101;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    header a:hover {
+      color: #3087f8;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gem-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gem-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .gem-card img.main-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gem-logo {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: white;
+      padding: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .gem-info {
+      padding: 1.2rem;
+    }
+
+    .gem-info h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #b70505;
+    }
+
+    .gem-info p {
+      margin: 0.6rem 0;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: linear-gradient(360deg, #fcf7f7cc, #b40303c5);
+      color: white;
+      margin-top: 2rem;
+    }
+    .search-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+#gemSearch {
+  width: 90%;
+  max-width: 400px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  transition: border 0.3s;
+}
+.tariqa{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 1rem;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0.5rem;
+    outline: none;
+    transition: border 0.3s;
+}
+.tariq{
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #9f2424;
+}
+p{
+  color: #000;
+}
+
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 40px;
+  right: 4px;
+  z-index: 9999;
+}
+
+.whatsapp-sticky img {
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#gemSearch:focus {
+  border-color: #666;
+}
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .tariqa {
+        width: 50%;
+        margin-left: 25%;
+      }
+
+      .gem-card img.main-img {
+        height: 180px;
+      }
+
+      .gem-info h2 {
+        font-size: 1.3rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" style="width: 40px; height: 40px; border-radius: 50%;">
+    <h1>🌍 Gem Guide</h1>
+    <a href="index.html">Home</a>
+  </header>
+
+  <div class="search-container">
+  <input type="text" id="gemSearch" placeholder="🔍 Search gems by name...">
+</div>
+
+ <div class="tariqa">
+        <a href="https://asimhanan.github.io/NexoinStoneRing/tariq.html" class="tariq" target="_blank">🔹Your Stone ?</a>
+  </div>
+
+   
+    <a href="https://wa.me/96566478563" target="_blank" class="whatsapp-sticky">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Chat on WhatsApp" />
+    </a>
+
+
+
+  <main>
+
+    <!-- Diamond -->
+    <div class="gem-card">
+      <img src="Diamond x (1).jpg" alt="Diamond" class="main-img">
+      <img src="logo.png" alt="Logo" class="gem-logo">
+      <div class="gem-info">
+        <h2>🔶 Diamond</h2>
+        <p><strong>Colors:</strong> Typically colorless, but also found in shades of blue, yellow, pink, and black.</p>
+        <p><strong>History:</strong> Known as the “King of Gems,” diamonds have been treasured for centuries for their brilliance and durability.</p>
+        <p><strong>Regions:</strong> Major sources include South Africa, Botswana, Russia, and Canada.</p>
+        <p><strong>Prices:</strong> Valued based on the 4Cs (cut, clarity, color, carat). Rare colors fetch record-breaking prices.</p>
+      </div>
+    </div>
+
+    <!-- Ruby -->
+    <div class="gem-card">
+      <img src="Ruby (1).png" alt="Ruby" class="main-img">
+      <img src="Ruby (2).jpg" alt="Logo" class="gem-logo">
+      <div class="gem-info">
+        <h2>🔵 Ruby</h2>
+        <p><strong>Colors:</strong> Deep red, often referred to as “pigeon blood” red.</p>
+        <p><strong>History:</strong> Revered since ancient times, rubies were believed to hold the power of life and passion.</p>
+        <p><strong>Regions:</strong> Myanmar’s Mogok Valley is world-famous, with deposits in Thailand, Sri Lanka, and Mozambique.</p>
+        <p><strong>Prices:</strong> High-quality rubies are among the most expensive gems, often surpassing diamonds in price per carat.</p>
+      </div>
+    </div>
+
+    <!-- Emerald -->
+    <div class="gem-card">
+      <img src="Emarald 1.png" alt="Emerald" class="main-img">
+      <img src="logo.png" alt="Logo" class="gem-logo">
+      <div class="gem-info">
+        <h2>🌿 Emerald</h2>
+        <p><strong>Colors:</strong> Rich green to bluish-green, often with natural inclusions.</p>
+        <p><strong>History:</strong> Cherished by royalty for centuries, emeralds were prized by Cleopatra.</p>
+        <p><strong>Regions:</strong> Colombia produces the finest emeralds, with notable sources in Zambia and Brazil.</p>
+        <p><strong>Prices:</strong> High-quality emeralds with vivid color and minimal inclusions command premium prices.</p>
+      </div>
+    </div>
+
+    <!-- Topaz -->
+    <div class="gem-card">
+      <img src="Topaz.png" alt="Topaz" class="main-img">
+      <img src="Topaz.png" alt="Logo" class="gem-logo">
+      <div class="gem-info">
+        <h2>🔶 Topaz</h2>
+        <p><strong>Colors:</strong> Found in golden yellow, blue, pink, and colorless varieties.</p>
+        <p><strong>History:</strong> Believed to provide strength and protection, revered in India and Egypt.</p>
+        <p><strong>Regions:</strong> Brazil is the leading source, with deposits in Nigeria, Sri Lanka, and Russia.</p>
+        <p><strong>Prices:</strong> Blue topaz is affordable, while imperial topaz can be highly valuable.</p>
+      </div>
+    </div>
+
+    <!-- Amethyst -->
+    <div class="gem-card">
+      <img src="Amethyst.png" alt="Amethyst" class="main-img">
+      <img src="logo.png" alt="Logo" class="gem-logo">
+      <div class="gem-info">
+        <h2>💜 Amethyst</h2>
+        <p><strong>Colors:</strong> Deep purple to lavender, with rich violet tones.</p>
+        <p><strong>History:</strong> Once as valuable as rubies, believed to prevent intoxication in ancient Greece.</p>
+        <p><strong>Regions:</strong> Brazil, Uruguay, and Zambia are major producers.</p>
+        <p><strong>Prices:</strong> Readily available and affordable, often used in jewelry and carvings.</p>
+      </div>
+    </div>
+
+    <!-- Firoz (Turquoise) -->
+    <div class="gem-card">
+      <img src="mixSTONES.png" alt="Firoz" class="main-img">
+      <img src="logo.png" alt="Logo" class="gem-logo">
+      <div class="gem-info">
+        <h2>🔷 Firoz (Turquoise)</h2>
+        <p><strong>Colors:</strong> Sky blue to greenish-blue, often with matrix patterns.</p>
+        <p><strong>History:</strong> Known as “Firoza,” worn for protection and fortune for 3,000 years.</p>
+        <p><strong>Regions:</strong> Iran’s Nishapur mines are legendary, with sources in USA and China.</p>
+        <p><strong>Prices:</strong> Pure sky-blue turquoise is the most prized variety.</p>
+      </div>
+    </div>
+
+    <!-- Peridot -->
+    <div class="gem-card">
+      <img src="Paridot 1.jpg" alt="Peridot" class="main-img">
+      <img src="Paridot.jpg" alt="Logo" class="gem-logo">
+      <div class="gem-info">
+        <h2>💚 Peridot</h2>
+        <p><strong>Colors:</strong> Bright lime to olive green with golden undertones.</p>
+        <p><strong>History:</strong> Called the “gem of the sun” by ancient Egyptians, mined since 1500 BCE.</p>
+        <p><strong>Regions:</strong> Kashmir (Pakistan) produces fine peridot, with sources in Myanmar and USA.</p>
+        <p><strong>Prices:</strong> Generally affordable, but flawless large stones are highly prized.</p>
+      </div>
+    </div>
+
+    <!-- Aquamarine -->
+    <div class="gem-card">
+      <img src="Aquamarine (2).png" alt="Aquamarine" class="main-img">
+      <img src="logo.png" alt="Logo" class="gem-logo">
+      <div class="gem-info">
+        <h2>🌊 Aquamarine</h2>
+        <p><strong>Colors:</strong> Pale blue to deep ocean blue, with watery clarity.</p>
+        <p><strong>History:</strong> Named for “sea water,” believed to protect sailors.</p>
+        <p><strong>Regions:</strong> Brazil is the primary source, with deposits in Madagascar and Pakistan.</p>
+        <p><strong>Prices:</strong> Usually affordable, but deep blue stones are more valuable.</p>
+      </div>
+    </div>
+
+    <!-- Sapphire -->
+    <div class="gem-card">
+      <img src="Saphire.png" alt="Sapphire" class="main-img">
+      <img src="Saphire.png" alt="Logo" class="gem-logo">
+      <div class="gem-info">
+        <h2>🔵 Sapphire</h2>
+        <p><strong>Colors:</strong> Royal blue is most famous, but also comes in pink, yellow, and green.</p>
+        <p><strong>History:</strong> A symbol of wisdom and nobility, used in royal crowns.</p>
+        <p><strong>Regions:</strong> Sri Lanka, Myanmar, and Kashmir are renowned, with sources in Madagascar.</p>
+        <p><strong>Prices:</strong> Blue sapphires with strong saturation rival rubies in value.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gem Guide. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById('gemSearch').addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase();
+      const gemCards = document.querySelectorAll('.gem-card');
+      gemCards.forEach(card => {
+        const gemName = card.querySelector('h2').textContent.toLowerCase();
+        card.style.display = gemName.includes(searchTerm) ? 'block' : 'none';
+      });
+    });
+</body>
+</html>
