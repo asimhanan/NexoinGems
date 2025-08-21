@@ -50,6 +50,7 @@
         
         p {
             margin-bottom: 15px;
+            color: #000;
         }
         
         img {
@@ -91,26 +92,38 @@
             z-index: 100;
             padding: 15px 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+        }
+        .hamburger {
+            display: flex;
         }
         
         .logo {
             font-size: 29px;
             font-weight: 700;
-            color: #0769ab;
+            width: 40%;
+            text-shadow: #666 2px 2px 2px;
+            color: linear-gradient(170deg, #f6f8f9, #040b8f);
         }
         
         .logo span {
-            color: #3d0202;
+            color: #bd0404;
+            text-shadow: #666 2px 2px 2px;
         }
         
-        nav {
+        .navbar {
+            width: 90%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-        
+            max-width: 1200px;
+            margin: 0 auto;
+        } 
+         
         .nav-links {
             display: flex;
+            width: 40%;
+            align-items: center;
         }
         
         .nav-links li {
@@ -127,10 +140,7 @@
             color: #ca271b;
         }
         
-        .hamburger {
-            display: none;
-            cursor: pointer;
-        }
+        
         
         /* Hero Section */
         .hero {
@@ -409,31 +419,9 @@
         }
         
         @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-                color: var(--light-color);
-                font-size: 24px;
-            }
-            
-            .nav-links {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 80px);
-                background-color: var(--dark-color);
+            .navbar {
                 flex-direction: column;
                 align-items: center;
-                padding-top: 40px;
-                transition: left 0.3s ease;
-            }
-            
-            .nav-links.active {
-                left: 0;
-            }
-            
-            .nav-links li {
-                margin: 15px 0;
             }
             
             .hero h1 {
@@ -461,6 +449,9 @@
             .contact-form {
                 padding: 30px 20px;
             }
+            .logo-containera{
+                
+                }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -468,20 +459,23 @@
 <body>
     <!-- Header & Navigation -->
     <header>
-        <div class="container">
-            <nav>
-            <a href="#" class="logo">Nexoin <span>Gems</span></a>
-            <ul class="nav-links">
-                <li><a href="GemDetail.html">GemGuide</a></li>
-                <li><a href="https://asimhanan.github.io/NexoinStoneRing/about.html">About</a></li>
-                <li><a href="https://asimhanan.github.io/NexoinStoneRing/">Rings</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
+             <nav class="navbar">
+
+                <div class="logo-container">
+                    <a href="#" class="logo">Nexoin <span>Gems</span></a>
+                </div>
+
+                <div class="hamburger">
+                    <ul class="nav-links">
+                      <li><a href="GemDetail.html">GemGuide</a></li>
+                      <li><a href="https://asimhanan.github.io/NexoinStoneRing/about.html">About</a></li>
+                      <li><a href="https://asimhanan.github.io/NexoinStoneRing/">Rings</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
-        </div>
+                                
+        
     </header>
 
     
@@ -711,26 +705,14 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Nexoin Gems. All Rights Reserved.</p>
+                <p>&copy; 2013 Nexoin Gems. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript for Mobile Navigation -->
     <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
+      
     </script>
 </body>
 </html>
