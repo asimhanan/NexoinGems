@@ -169,11 +169,11 @@
 .home a {
          text-decoration: none;
          color: #fff;
-            background-color: #4a148ca6;
+/*             background-color: #4a148ca6;
             padding: 5px 10px;
             border-radius: 50px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, transform 0.3s;
+            transition: background-color 0.3s, transform 0.3s; */
          font-size: 1rem;
          font-weight: bold;
 }
@@ -191,11 +191,11 @@
 .home_r a {
          text-decoration: none;
          color: #fff;
-            background-color: #4a148ca6;
+/*             background-color: #4a148ca6;
             padding: 5px 10px;
             border-radius: 50px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, transform 0.3s;
+            transition: background-color 0.3s, transform 0.3s; */
          font-size: 1rem;
          font-weight: bold;
 }
@@ -434,14 +434,15 @@
                 right: 10px;
             }
             .home a{
-                font-size: 0.6rem;
+                font-size: 0.9rem;
             }
             .home_r {
                 top: 50px;
                 right: 10px;
             }
             .home_r a{
-                font-size: 0.6rem;
+                font-size: 0.9rem;
             }
 
         }
+
