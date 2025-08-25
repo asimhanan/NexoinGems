@@ -401,6 +401,15 @@
   border-radius: 50%;
   height: auto;
 }
+#bt{
+    margin-top: 2rem;
+    background-color: #3ac1d9;
+    border-radius: 25px;
+    color: #fff;
+}
+#bt:hover{
+    background-color: #7b3f00;
+}
 
         
         /* Responsive Design */
@@ -495,6 +504,7 @@
                 <p>Discover the finest collection of precious and semi-precious gemstones sourced directly from mines around the world. Each stone is hand-selected for its exceptional quality and beauty.</p>
                 <a href="Tariq_Burj.html" class="btn">Find your Gem</a>
             </div>
+            <a href="Tariq_Burj.html" class="btn" id="bt">Gem Gallery</a>
         </div>
     </section>
 
@@ -705,14 +715,26 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2013 Nexoin Gems. All Rights Reserved.</p>
+                <p>&copy; 2023 Nexoin Gems. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript for Mobile Navigation -->
     <script>
-      
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
     </script>
 </body>
 </html>
